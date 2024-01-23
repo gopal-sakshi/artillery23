@@ -1,0 +1,10 @@
+installing Artillery
+- as a dev dependency inside another nodeJS project     (not recommended)
+- maintain separate repository with performance tests   (recommended)
+
+
+npm install artillery
+npx artillery dino
+npx artillery version
+
+npx artillery run tests23/loadTest1.yml

@@ -1,0 +1,10 @@
+artillery test scripts have 2 parts
+- config
+- scenario
+
+
+config
+- target === all requests will use that baseUrl
+- load phases (how many virtual users to create)
+    we have 3 phases - warm, ramp, spike
+    

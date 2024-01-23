@@ -1,0 +1,20 @@
+config:
+  target: http://localhost:3044
+  http:
+    timeout: 15
+  payload:
+    path: ../resources23/users23.csv
+    fields:
+      - "user23"
+      - "pass222"
+    loadAll: true
+    name: credentials23
+scenarios:
+  - flow:
+    - loop:
+      - put:
+          url: "/auth/signup"
+          json:
+            userName: "{{ $loopElement.user23 }}"
+            password: "{{ $loopElement.pass222 }}"        ## it seems loopElement is reserved thingy, we have to use the same
+      over: credentials23                                   ## to access the 1st, 2nd, 3rd rows of csv
