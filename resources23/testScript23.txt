@@ -2,9 +2,21 @@ artillery test scripts have 2 parts
 - config
 - scenario
 
-
+===========================================================================
 config
 - target === all requests will use that baseUrl
 - load phases (how many virtual users to create)
     we have 3 phases - warm, ramp, spike
-    
+
+scenarios
+- while config section specifies virtual agents (VUs)
+    how many should be created; at what pace, speed -- they should be created
+- scenarios ---> how those VUs must behave
+- scenario == series of http requests sent by VU to application
+- 3 sub-sections == flow, name, weight
+    flow == GET, POST http (or) emit events socketio
+    name == a descriptive name for the flow
+===========================================================================
+
+before/after sections
+- top level sections - run an scenario once per test before 

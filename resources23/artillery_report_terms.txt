@@ -1,0 +1,8 @@
+http.response_time.p95 = 75ms
+- 95% of requests have response time of less than 75ms
+- other 5% requests ===> have response time more than 75ms
+
+apdex (application performance index)
+- satisfied
+- frustrated
+- 

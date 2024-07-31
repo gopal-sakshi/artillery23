@@ -3,8 +3,8 @@ installing Artillery
 - maintain separate repository with performance tests   (recommended)
 
 
-npm install artillery
-npx artillery dino
-npx artillery version
+npm install artillery           ### use node version 18
+npx artillery dino              ### show dinosaur image ??
+npx artillery version           ### 2.0.16 is the version
 
 npx artillery run tests23/loadTest1.yml
